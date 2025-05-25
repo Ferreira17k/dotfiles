@@ -35,7 +35,7 @@ input {
 
 layout {
     // always-center-single-column
-    gaps 5
+    gaps 9
     default-column-width {
         proportion 0.5
     }
@@ -54,19 +54,30 @@ layout {
     }
 
     focus-ring {
-        width 1
+        width 1.4
         active-color "#FFFFFF"
     }
 
     struts {
-        top -3
-        bottom -2
+        top -8
+        bottom -6
         left 0
         right -1
         }
     // always-center-single-column // config center window spawn default
     background-color "transparent"
 
+    tab-indicator {
+        active-color "#eee"
+        inactive-color "#96e7ff88"
+        width 6
+        gap 6
+        corner-radius 10
+        gaps-between-tabs 8
+        length total-proportion=0.2
+        place-within-column
+        hide-when-single-tab
+    }
 }
 
 cursor {
@@ -86,6 +97,7 @@ binds {
     XF86AudioRaiseVolume { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "+5%"; }
     XF86AudioLowerVolume { spawn "pactl" "set-sink-volume" "@DEFAULT_SINK@" "-5%"; }
     XF86AudioMute        { spawn "pactl" "set-sink-mute" "@DEFAULT_SINK@" "toggle"; }
+    Alt+T { toggle-column-tabbed-display; }
 
     XF86MonBrightnessDown { spawn "brightnessctl" "set" "5%-"; }
     XF86MonBrightnessUp { spawn "brightnessctl" "set" "5%+"; }
