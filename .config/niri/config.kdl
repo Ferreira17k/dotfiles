@@ -59,7 +59,7 @@ layout {
     }
 
     struts {
-        top -8
+        top -7
         bottom -6
         left 0
         right -1

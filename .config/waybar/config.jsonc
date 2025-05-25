@@ -36,9 +36,9 @@
     "on-click-right": "bluetoothctl power off"
   },
   "network": {
-    "format": "    {essid} ",
+    "format": " {essid} ",
     "tooltip-format": " {ipaddr} / {signalStrength}% ",
-    "format-disconnected": " 󰤮  ",
+    // "format-disconnected": " 󰤮  ",
     "max-length": 30,
     "on-click": "kitty -T wifi -e nmtui"
   },
