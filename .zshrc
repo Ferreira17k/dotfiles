@@ -40,6 +40,7 @@ alias down='echo o | sudo tee /proc/sysrq-trigger'
 alias ls='exa -a'
 alias shx='sudo HOME=$HOME helix'
 alias jp='jupyter notebook'
+alias mirror='wl-mirror --fullscreen eDP-1'
 
 alias menrank='sudo dmidecode --type memory'
 alias mencl='sudo decode-dimms'
