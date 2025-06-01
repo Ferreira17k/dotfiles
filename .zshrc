@@ -41,6 +41,7 @@ alias ls='exa -a'
 alias shx='sudo HOME=$HOME helix'
 alias jp='jupyter notebook'
 alias mirror='wl-mirror --fullscreen eDP-1'
+alias paclean='sudo pacman -Rns $(pacman -Qdtq)'
 
 alias menrank='sudo dmidecode --type memory'
 alias mencl='sudo decode-dimms'
