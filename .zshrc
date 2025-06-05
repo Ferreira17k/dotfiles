@@ -7,11 +7,26 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 unsetopt BEEP
 
 # export PROMPT="%K{004} %1~%f %k%F{004}🭬%f "
-export PROMPT="%F{cyan} %F{#006BA6}%~ %F{cyan}➤%f  "
+# export PROMPT="%F{cyan} %F{#006BA6}%~ %F{cyan}➤%f  "
+# export PROMPT="%F{cyan} %F{#006BA6}%1~ %F{cyan}▶%f  "
+
+# Função para exibir a branch Git (somente se dentro de repo Git)
+function git_branch {
+  if command git rev-parse --is-inside-work-tree &>/dev/null; then
+    local branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+    echo "%F{magenta}[$branch] %f"
+  else
+    echo ""  # nada se não for repositório git
+  fi
+}
+
+function precmd {
+  PROMPT_COLOR="%F{cyan}"
+  PROMPT=" ${PROMPT_COLOR}%F{#006BA6}%1~ $(git_branch)%F{cyan}▶%f "
+}
 
 export LANG=pt_BR.cp1252
 export PATH=$PATH:/opt/android-sdk/platform-tools
-
 
 # Shortcuts legacy Spaniol
 alias cl='clear'
