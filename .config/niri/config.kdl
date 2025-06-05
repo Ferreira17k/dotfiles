@@ -34,7 +34,7 @@ input {
 // }
 
 layout {
-    // always-center-single-column
+    always-center-single-column
     gaps 9
     default-column-width {
         proportion 0.5

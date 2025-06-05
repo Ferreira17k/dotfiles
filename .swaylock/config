@@ -1,6 +1,6 @@
 clock
 timestr=%R
-datestr=%a, %e of %b
+datestr=%a,%e of %b
 indicator
 
 image=/home/brunofs/core/imagens/black.png
