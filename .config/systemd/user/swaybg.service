@@ -1,0 +1,12 @@
+
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+# Posto cabuloso:
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp26.png"
+
+ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw.jpg"
+Restart=on-failure
