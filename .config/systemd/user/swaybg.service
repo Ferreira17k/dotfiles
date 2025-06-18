@@ -5,8 +5,30 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-# Posto cabuloso:
-# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp26.png"
+# wallpaper do w11
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/w11d.jpg"
 
-ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw.jpg"
+# Montnha preta
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/montanha-preta.jpg"
+
+# COsmic wallpapers like
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw3.jng"
+
+# Posto cabuloso:
+ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp26.png"
+
+# Lascado Balão
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/balao.jpg"
+
+# Montanha e praia roxo e os caraio
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw.jpg"
+
+# Linux assaltando a porra do windows
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw2.jpg"
+
+# Rick and Morty
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp32.jpg"
+
+
+
 Restart=on-failure

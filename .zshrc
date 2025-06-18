@@ -61,7 +61,8 @@ alias paclean='sudo pacman -Rns $(pacman -Qdtq)'
 
 alias menrank='sudo dmidecode --type memory'
 alias mencl='sudo decode-dimms'
-
+alias vd='visidata'
+alias timg3='timg * --title --grid=3x'
 
 # Color
 #alias ls='ls --color=auto'
