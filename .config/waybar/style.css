@@ -1,12 +1,13 @@
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 15px
+  font-size: 17px
 }
 
 window#waybar {
-  background: transparent;
+  background: rgba(30, 30, 30, 0.5);
   color: white;
 }
+
 
 #battery.warning:not(.charging) {
   color: #f2a827;

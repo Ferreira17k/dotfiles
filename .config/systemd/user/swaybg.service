@@ -15,10 +15,10 @@ Requisite=graphical-session.target
 # ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw3.jng"
 
 # Posto cabuloso:
-ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp26.png"
+# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/wpp26.png"
 
 # Lascado Balão
-# ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/balao.jpg"
+ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/balao.jpg"
 
 # Montanha e praia roxo e os caraio
 # ExecStart=/usr/bin/swaybg -m fill -i "%h/core/imagens/ppw.jpg"

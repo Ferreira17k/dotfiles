@@ -17,15 +17,15 @@ input {
     warp-mouse-to-focus
 }
 
-// output "eDP-1" {
-//     // off
-//     mode "1920x1080@60.00"
-//     position x=0 y=0
-//     // scale 1.0
-//     // transform "90"
-//     // variable-refresh-rate // on-demand=true
-//     // background-color "#003300"
-// }
+output "eDP-1" {
+    // off
+    mode "1920x1080@60.00"
+    position x=0 y=0
+    scale 1.0
+    // transform "90"
+    // variable-refresh-rate // on-demand=true
+    // background-color "#003300"
+}
 
 // output "HDMI-A-1" {
 //     scale 1.2
@@ -35,7 +35,7 @@ input {
 
 layout {
     always-center-single-column
-    gaps 9
+    gaps 0
     default-column-width {
         proportion 0.5
     }
@@ -54,17 +54,17 @@ layout {
     }
 
     focus-ring {
-        width 1.4
+        width 1.5
         active-color "#FFFFFF"
     }
 
     struts {
-        top -7
-        bottom -6
+        top  1 //-7
+        bottom  0 //-6
         left 0
-        right -1
+        right 0 // -1
         }
-    // always-center-single-column // config center window spawn default
+
     background-color "transparent"
 
     tab-indicator {
@@ -215,7 +215,7 @@ window-rule { // Task manager
 }
 
 window-rule { // All windows
-    geometry-corner-radius 8
+    geometry-corner-radius 0 // 8
     clip-to-geometry true
 }
 
