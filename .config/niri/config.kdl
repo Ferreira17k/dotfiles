@@ -240,6 +240,7 @@ overview {
 }
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
+spawn-at-startup "make"
 
 environment {
     // # XWayland
