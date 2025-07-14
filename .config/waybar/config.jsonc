@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "height": 37,
+  "height": 35,
   "spacing": 4,
   "modules-left": [
     "bluetooth",
