@@ -24,6 +24,7 @@ function precmd {
   PROMPT_COLOR="%F{cyan}"
   PROMPT=" ${PROMPT_COLOR}%F{#006BA6}%1~ $(git_branch)%F{cyan}▶%f "
   # PROMPT=" ${PROMPT_COLOR}%F{#006BA6}%1~ $(git_branch)%F{cyan}➤%f "
+  # PROMPT=" ${PROMPT_COLOR}%F{#006BA6}%1~ $(git_branch)%F{cyan}󰘵%f "
 }
 
 export LANG=pt_BR.cp1252
@@ -58,6 +59,7 @@ alias shx='sudo HOME=$HOME helix'
 alias jp='jupyter notebook'
 alias mirror='wl-mirror --fullscreen eDP-1'
 alias paclean='sudo pacman -Rns $(pacman -Qdtq)'
+alias btop='btop --force-utf'
 
 alias menrank='sudo dmidecode --type memory'
 alias mencl='sudo decode-dimms'
