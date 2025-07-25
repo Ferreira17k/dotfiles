@@ -5,7 +5,7 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/swaybg -m fill -i "/home/brunofs/core/imagens/balao.jpg"
+ExecStart=/usr/bin/swaybg -m fill -i "/home/brunofs/Downloads/planet.jpg"
 Restart=on-failure
 
 [Install]

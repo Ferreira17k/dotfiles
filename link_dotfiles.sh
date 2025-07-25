@@ -14,6 +14,8 @@ declare -a FILES=(
     ".config/waybar/style.css"
     ".swaylock/config"
     ".zshrc"
+    ".config/helix/config.toml"
+    ".config/helix/languages.toml"
 )
 
 echo "=============================="
