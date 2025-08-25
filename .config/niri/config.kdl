@@ -3,6 +3,8 @@ input {
         xkb {
             // Change keyboard
             layout "br"
+            // layout "us"
+            // variant "intl"
             options "caps:swapescape"
         }
     }
@@ -18,7 +20,7 @@ input {
 }
 
 output "eDP-1" {
-    off
+    // off
     mode "1920x1080@60.00"
     position x=0 y=0
     scale 1.0
@@ -87,7 +89,7 @@ cursor {
 
 binds {
     Alt+D { toggle-overview; }  
-    Alt+Return { spawn "kitty"; }
+    Alt+Return { spawn "foot"; }
     ALt+Space { spawn "wofi" "--show" "drun"; }
     Mod+L { spawn "swaylock"; }
     Mod+F { spawn "firefox"; }
@@ -256,5 +258,10 @@ environment {
     QT_QPA_PLATFORM "xcb"
 }
 
-
-
+animations {
+    // off
+    workspace-switch {
+            spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+            // off
+    }
+}

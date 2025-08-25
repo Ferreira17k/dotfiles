@@ -1,9 +1,10 @@
 {
+  // "position": "bottom",
   "layer": "top",
   "height": 35,
   "spacing": 4,
   "modules-left": [
-    "bluetooth",
+    // "bluetooth",
     "custom/music",
   ],
   "modules-center": [
@@ -22,7 +23,7 @@
     "exec": "playerctl metadata --format='{{ title }}'",
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
-    "max-length": 18
+    "max-length": 21
   },
   "bluetooth": {
     "format": "  {status} ",

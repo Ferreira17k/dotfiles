@@ -7,7 +7,7 @@ image=/home/brunofs/core/imagens/black.png
 # screenshot
 
 font=JetBrains Nerd Font
-font-size=80
+font-size=60
 effect-blur=20x3
 # indicator-x-position=
 indicator-y-position=325

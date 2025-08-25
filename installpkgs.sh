@@ -51,6 +51,7 @@ wpa_supplicant
 xwayland-satellite
 zig
 zsh
+wl-mirror # manual add
 )
 
 pkgs_yay=(
