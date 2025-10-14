@@ -1,11 +1,10 @@
-input {
-    keyboard {
+input { keyboard {
         xkb {
             // Change keyboard
-            layout "br"
-            // layout "us"
-            // variant "intl"
-            options "caps:swapescape"
+            // layout "br"
+            layout "us_custom"
+            variant "intl_custom"
+            options "caps:swapescape" // not disable
         }
     }
 
@@ -37,7 +36,7 @@ output "HDMI-A-1" {
 
 layout {
     always-center-single-column
-    gaps 0
+    gaps 11
     default-column-width {
         proportion 0.5
     }
@@ -61,7 +60,7 @@ layout {
     }
 
     struts {
-        top  1 //-7
+        top  -9 //-7
         bottom  0 //-6
         left 0
         right 0 // -1
@@ -88,6 +87,7 @@ cursor {
 }
 
 binds {
+    Alt+Y { toggle-windowed-fullscreen; }
     Alt+D { toggle-overview; }  
     Alt+Return { spawn "foot"; }
     ALt+Space { spawn "wofi" "--show" "drun"; }
@@ -209,6 +209,12 @@ window-rule { // Firefox PiP
     open-floating true
 }
 
+window-rule { // ms edge by default float, switch this behavior
+    match app-id="edge"
+    open-floating false
+}
+
+
 window-rule { // Task manager
     match app-id="kitty" title="btop"
     open-floating true
@@ -219,7 +225,7 @@ window-rule { // Task manager
 }
 
 window-rule { // All windows
-    geometry-corner-radius 0 // 8
+    geometry-corner-radius 6 // 8
     clip-to-geometry true
 }
 

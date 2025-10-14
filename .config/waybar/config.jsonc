@@ -5,7 +5,8 @@
   "spacing": 4,
   "modules-left": [
     // "bluetooth",
-    "custom/music",
+    // "custom/music",
+    "niri/workspaces",
   ],
   "modules-center": [
     "clock",
