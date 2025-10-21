@@ -62,6 +62,8 @@
     "format": " {:%H:%M} ",
     "tooltip-format": " {:%d/%m/%Y} ",
     "interval": 60,
+    "on-click": "playerctl play-pause",
+
   },
   "cpu": {
     "states": {
