@@ -30,8 +30,8 @@ function precmd {
 export LANG=pt_BR.cp1252
 export PATH=$PATH:/opt/android-sdk/platform-tools
 export EDITOR=helix
-export SUPABASE_URL=https://ruthohqabcbdblskofld.supabase.co
-export SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1dGhvaHFhYmNiZGJsc2tvZmxkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NzcyMDM4MSwiZXhwIjoyMDczMjk2MzgxfQ.Kr4AzkXAEQfeTo6vdVrw5f4XUvQrzJnUMSBVIJ5c7fU
+# export SUPABASE_URL=https://ruthohqabcbdblskofld.supabase.co
+# export SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1dGhvaHFhYmNiZGJsc2tvZmxkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NzcyMDM4MSwiZXhwIjoyMDczMjk2MzgxfQ.Kr4AzkXAEQfeTo6vdVrw5f4XUvQrzJnUMSBVIJ5c7fU
 
 # Shortcuts legacy Spaniol
 alias cl='clear'
@@ -66,7 +66,7 @@ alias menrank='sudo dmidecode --type memory'
 alias mencl='sudo decode-dimms'
 alias vd='visidata'
 alias timg3='timg * --title --grid=3x'
-alias toff='systemctl hibernate'
+alias hate='systemctl hibernate'
 
 
 # Color
