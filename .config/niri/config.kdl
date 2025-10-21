@@ -86,6 +86,12 @@ cursor {
     hide-when-typing
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 binds {
     Alt+Y { toggle-windowed-fullscreen; }
     Alt+D { toggle-overview; }  
