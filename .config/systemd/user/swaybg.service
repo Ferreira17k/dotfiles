@@ -7,6 +7,8 @@ After=graphical-session.target
 Type=simple
 ExecStart=/usr/bin/swaybg -m fill -i "/home/brunofs/core/imagens/wpp29.jpg"
 # ExecStart=/usr/bin/swaybg -m fill -i "/home/brunofs/core/imagens/planet.jpg"
+# ExecStart=/usr/bin/swaybg -m fill -i "/home/brunofs/Downloads/bd-coffee.jpg"
+
 Restart=on-failure
 
 [Install]
